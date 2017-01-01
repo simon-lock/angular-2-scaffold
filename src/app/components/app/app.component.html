@@ -1,0 +1,21 @@
+<div class="header">
+    <a routerLink="/home">
+        <h1>
+            <span>
+                <img class="logo" [src]="arrowForwardLogo">
+            </span>
+            <span class="title">
+                Hello {{name}}
+            </span>
+        </h1>
+    </a>
+</div>
+
+<nav>
+    <a class="menuItem" routerLink="/home">Home</a>
+    <a class="menuItem" routerLink="/about">About</a>
+</nav>
+
+<div class="content">
+    <router-outlet></router-outlet>
+</div>
